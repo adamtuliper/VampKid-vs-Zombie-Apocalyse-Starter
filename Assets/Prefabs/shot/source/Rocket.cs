@@ -9,6 +9,8 @@ public class Rocket : MonoBehaviour
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
+        //Destroy ourselves in 8 seconds (if we haven't already beenn destroyed by someone else)
+        Destroy(gameObject, 8f);
     }
 
 

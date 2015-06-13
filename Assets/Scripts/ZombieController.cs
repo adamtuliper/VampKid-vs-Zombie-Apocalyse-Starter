@@ -104,15 +104,9 @@ public class ZombieController : MonoBehaviour
         }
         Destroy(gameObject);
     }
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "rocket")
-        {
-            _gameController.IncrementPoints(10);
-            Destroy(collision.gameObject);
-            GotHit();
-        }
-    }
+    
+    //OnTriggerEnter here
+
 
     //FixedUpdate here
 

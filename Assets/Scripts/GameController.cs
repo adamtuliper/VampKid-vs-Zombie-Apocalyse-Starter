@@ -8,11 +8,13 @@ public class GameController : MonoBehaviour {
     private int _coinScore;
     private int _points;
 
+    //The textboxes on the screen we'll update
     public Text PointsText;
     public Text CoinScoreText;
     public Text LevelMessageText;
     public string LevelNameToLoad;
 
+    //The portal so we can enable it when the user picks up the key.
     public PortalController PortalControllerFromCrypt;
    
     //PlayerDied Goes Here
@@ -63,17 +65,7 @@ public class GameController : MonoBehaviour {
 
     }
 
-    public void IncrementCoinScore(int amount)
-    {
-        _coinScore += amount;
-        CoinScoreText.text = _coinScore.ToString();
-    }
-
-    public void IncrementPoints(int amount)
-    {
-        _points += amount;
-        PointsText.text = _points.ToString() + " PTS";
-    }
+   //Increment scores here
 
    //ShowLevelMessage here
 }
