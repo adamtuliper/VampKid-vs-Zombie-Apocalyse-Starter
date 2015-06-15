@@ -11,7 +11,8 @@ public class GameController : MonoBehaviour {
     //The textboxes on the screen we'll update
     public Text PointsText;
     public Text CoinScoreText;
-    public Text LevelMessageText;
+
+	//LevelMessageText here 
     public string LevelNameToLoad;
 
     //The portal so we can enable it when the user picks up the key.
@@ -36,6 +37,9 @@ public class GameController : MonoBehaviour {
         {
             Debug.LogError("There's no PortalController reference drag/dropped into the hierarchy window for the GameController. We can't enable the portal (crypt) without this reference being set.");
         }
+		
+		//LevelMessageText Error check
+		
     }
     //Enables the 'crypt' exit portal once we've picked up the key in a scene
     public void EnableExitPortal()
